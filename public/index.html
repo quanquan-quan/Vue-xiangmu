@@ -3,8 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <!--href="<%= BASE_URL %>是用来解决路径点的问题 加上它始终是当前项目的根路径  -->
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <!-- 引入初始化的样式 -->
+    <link rel="stylesheet" href="./reset.css">
+    <!-- 引入图标字体 -->
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1500487_0gblofa4mo8.css">
     <title>my-vue-3</title>
   </head>
   <body>
@@ -13,5 +18,14 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <script>
+      // function remRefresh() {
+      //   let clientWidth = document.documentElement.clientWidth
+      //   let rem = clientWidth/10
+      //   document.documentElement.style.fontSize = rem +'px'
+      //   document.body.style.fontSize = '12px'
+      // }
+      // remRefresh()
+    </script>
   </body>
 </html>

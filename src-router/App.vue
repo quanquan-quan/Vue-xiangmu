@@ -1,25 +1,16 @@
 <template>
-  <div>
+  <div id="app">
   <router-view></router-view>
-  <FooterGuide/>
   </div>
 </template>
 
 <script>
-//引入FooterGuide组件
-import FooterGuide from "./conmpnents/FooterGuide/FooterGuide";
-
 export default {
   name: 'app',
-  components:{
-    FooterGuide
-  }
-  
 }
 </script>
+
 <style lang='stylus' rel="stylesheet/stylus">
-
-
  //定义变量：复用
  $color = red
  * 
